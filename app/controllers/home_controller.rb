@@ -9,4 +9,13 @@ class HomeController < ApplicationController
 
   def contact
   end
+  
+  def lorem
+    
+  end
+  
+  def showlorem
+    num = params[:num].to_i
+    @result = num.sentences
+  end
 end

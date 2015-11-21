@@ -1,0 +1,5 @@
+<%= form_tag(lorem_path, :method => 'post') do %>
+<h1>Please enter the number of sentences</h1>
+<%= number_field_tag "num" %>
+<%= submit_tag "Submit" %>
+<% end %>

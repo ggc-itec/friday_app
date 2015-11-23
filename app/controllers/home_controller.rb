@@ -18,4 +18,15 @@ class HomeController < ApplicationController
     num = params[:num].to_i
     @result = num.sentences
   end
+  
+  def calc
+    
+  end
+  
+  def showcalc
+    bill = params['bill'].to_i
+    percent = params['percent'] .to_i
+    @tip = ( percent/100.0 ) * bill
+    @percent = percent
+  end
 end

@@ -1,0 +1,9 @@
+<%# erb view for calc form %>
+
+<%= form_tag(calc_path, method: "post") do %>
+<h1>Total Bill</h1>
+<%= number_field_tag "bill"  %>
+<h1>Tip Percentage</h1>
+<%= number_field_tag "percent" %>
+<%= submit_tag "Submit" %>
+<% end %>

@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   get 'lorem' => 'home#lorem'
   post 'lorem' => 'home#showlorem'
   
+  get 'calc' => 'home#calc'
+  post 'calc' => 'home#showcalc'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

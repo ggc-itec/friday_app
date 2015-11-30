@@ -8,3 +8,14 @@
 <p>about_path <%= about_path %></p>
 <p>about_url <%= about_url %></p>
 <p>about_url <%= reverse(about_url) %></p>
+
+<p id="dude">The reason you are reading this is because you didn't click it yet</p>
+
+<img id="pic" src="https://pbs.twimg.com/profile_images/555279965194051585/swMjWLLf.jpeg"/>
+
+<script>
+   $(document).ready(function() {
+     var color = window.prompt("What color?");
+     $('body').css("background-color",color);
+   }); 
+</script>
